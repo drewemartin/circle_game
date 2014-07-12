@@ -6,13 +6,22 @@
     $( document ).ready(function() {
         console.log( "document loaded" );
 
+  //       goals:
+  //       1)get one ball to move randomly
+  //   		- research how to animate
+  //   		- this will have to be a loop using callbacks
+  //   		(i.e. do B until you get to B and then B calls on A)
+  //   	2)get that same ball to explode when clicked
+		// 	- research how to explode when clicked
+		// 3)get both actions to work in constrained space (i.e. <div>) 
+
+
         function CircleCreator(){
        	var circle = document.createElement('div');
        	var hw = Math.floor((Math.random() * 30) + 50);
        	circle.style.height = hw + "px";
        	circle.style.width = hw + "px";
        	circle.style.backgroundColor="red";
-       	circle.style.marginBottom="10px";
        	circle.style.borderRadius= (hw/2) + "px";
 		return circle;
        	}
